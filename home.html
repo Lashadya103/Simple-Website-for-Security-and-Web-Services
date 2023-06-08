@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Sea Buddies </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	
+</head>
+<body class="is-preload-0 is-preload-1 is-preload-2">
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Header -->
+		<header id="header">
+			<h1 ali>◡̈ &nbsp Sea Buddies &nbsp &nbsp &nbsp&nbsp</h1>
+
+		</header>
+
+		<!-- Thumbnail -->
+		<section id="thumbnails">
+			<article>
+				<a class="thumbnail" href="images/fulls/01.gif" data-position="left center"><img src="images/fulls/011.jpg" alt="" onclick="loadDoc1()" /></a>
+				<h2>Sharks</h2>
+				<p>Modern sharks are classified within the clade Selachimorpha.</p>
+			</article>
+			<article>
+				<a class="thumbnail" href="images/fulls/02.gif"><img src="images/fulls/022.jpg" alt="" onclick="loadDoc2()" /></a>
+				<h2>Sea Turtle</h2>
+				<p>Sea turtles (superfamily Chelonioidea), sometimes called marine turtles, are reptiles of the order Testudines and of the suborder Cryptodira.</p>
+			</article>
+			<article>
+				<a class="thumbnail" href="images/fulls/03.gif" data-position="top center"><img src="images/fulls/033.jpg" alt="" onclick="loadDoc3()" /></a>
+				<h2>Octopus</h2>
+				<p>Maecenas eleifend tellus ut turpis eleifend, vitae pretium faucibus.</p>
+			</article>
+			<article>
+				<a class="thumbnail" href="images/fulls/04.gif"><img src="images/fulls/044.jpg" alt="" onclick="loadDoc4()"/></a>
+				<h2>Blue Whale</h2>
+				<p>The blue whale (Balaenoptera musculus) is a marine mammal and a baleen whale.</p>
+			</article>
+			<article>
+				<a class="thumbnail" href="images/fulls/05.gif" data-position="top center"><img src="images/fulls/055.jpg" alt="" onclick="loadDoc5()"/></a>
+				<h2>Sea Horse</h2>
+				<p>A seahorse (also written sea-horse and sea horse) is any of 46 species of small marine fish in the genus Hippocampus.</p>
+			</article>
+			<article>
+				<a class="thumbnail" href="images/fulls/06.gif"><img src="images/fulls/066.jpg" alt="" onclick="loadDoc6()"/></a>
+				<h2>Jelly Fish</h2>
+				<p>Jellyfish are mainly free-swimming marine animals with umbrella-shaped bells.</p>
+			</article>
+
+
+
+
+		</section>
+
+		<script>
+			function loadDoc1() {
+				const xhttp = new XMLHttpRequest();
+				xhttp.onload = function () {
+					document.getElementById("demo").innerHTML =
+						this.responseText;
+				}
+				xhttp.open("GET", "shark.txt");
+				xhttp.send();
+			}
+
+            function loadDoc2() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+                xhttp.open("GET", "sea_turtle.txt");
+                xhttp.send();
+			}
+
+            function loadDoc3() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+                xhttp.open("GET", "octopus.txt");
+                xhttp.send();
+			}
+
+            function loadDoc4() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+                xhttp.open("GET", "whale.txt");
+                xhttp.send();
+			}
+
+            function loadDoc5() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+                xhttp.open("GET", "sea_horse.txt");
+                xhttp.send();
+			}
+
+            function loadDoc6() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    document.getElementById("demo").innerHTML =
+                        this.responseText;
+                }
+                xhttp.open("GET", "jelly_fish.txt");
+                xhttp.send();
+            }
+		</script>
+		<br><br>
+<h3 style="text-align:center">READ MORE</h3>
+<br><table style="width:92% ; height:50% ; margin-left:15px">
+	<tr><th id="demo" style="text-align:justify"></th></tr>
+</table>
+
+
+</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+	</html>
